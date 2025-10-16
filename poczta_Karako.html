@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Выполнил KARAKO -->
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="KARAKO">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poczta — KARAKO</title>
+  <style>
+    body{font-family:Tahoma, Geneva, sans-serif; margin:30px; background:linear-gradient(180deg,#f6fcff,#ffffff);}
+    .panel{max-width:760px; margin:0 auto; background:rgba(255,255,255,0.95); padding:18px; border-radius:8px; box-shadow:0 8px 20px rgba(0,0,0,0.06);}
+    label{display:block; margin:10px 0;}
+    input[type="email"], input[type="text"], textarea{width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;}
+    input[type="submit"]{margin-top:12px; padding:10px 14px; border-radius:8px; border:0; background:#00a0d6; color:#fff; cursor:pointer;}
+    .note{font-size:13px; color:#555; margin-top:10px;}
+    a.back{display:block; margin-top:14px;}
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h1>Poczta — KARAKO</h1>
+    <p>Formularz, który otwiera lokalny klient pocztowy (mailto). Możesz wpisać adres odbiorcy i treść.</p>
+
+    <form action="mailto:kontakt@karako.example" method="post" enctype="text/plain">
+      <label>Do: <input type="email" name="to" value="kontakt@karako.example" required></label>
+      <label>Temat: <input type="text" name="subject"></label>
+      <label>Treść:<br><textarea name="body" rows="8"></textarea></label>
+      <input type="submit" value="Wyślij (otworzy klienta pocztowego)">
+    </form>
+
+    <p class="note">Uwaga: działanie zależy od skonfigurowanego klienta pocztowego w Twoim systemie. To rozwiązanie demonstracyjne.</p>
+
+    <a class="back" href="index.html">← Wróć do strony głównej</a>
+
+    <footer style="margin-top:16px; text-align:center; color:#666;">© KARAKO</footer>
+  </div>
+</body>
+</html>
